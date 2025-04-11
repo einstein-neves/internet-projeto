@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+  
+    <title>Document</title>
+</head>
+
+<body>
+    <Div class ="caixa-video">
+        <video src="img.livro/video.mp4" loop muted autoplay></video> <!--  video de fundo  pode por um video ou uma imagem de fundo bom por algo relacionado ao linck -->    
+        <div class="mascara"></div>
+    </Div>
+
+    <header class="header">
+        <section>
+            <a href="#">
+                <img src="img.livro/logo.jpg" alt="logo"> <!--  img do canto do site --> 
+            </a>
+            <nav>
+                <a href="#">Inicio</a>  <!--  menu  --> 
+                <a href="#">Descrição do Livro</a> <!--  menu  --> 
+                <!--  <a href="#"onclick="mostrarModal()">Endereço</a>   menu  --> 
+            </nav>
+        </section>
+    </header>
+    
+    <section class="caixa-principal">
+        <div>
+            <h3>Story of the Internet </h3> <!--  texto  sobre o conteudo  --> 
+            <P>Apresentação: Story of the Internet
+                O livro Story of the Internet oferece uma visão acessível e envolvente sobre a evolução da internet, 
+                desde seus primórdios militares e acadêmicos até se tornar a rede global que conecta bilhões de pessoas.
+                Com uma linguagem clara, o autor narra os marcos tecnológicos, os personagens-chave e os impactos sociais da internet,
+                mostrando como ela transformou a comunicação, o comércio, a educação e a cultura. Uma leitura essencial para quem quer 
+                entender como chegamos até aqui na era digital.</P>
+
+                <a class="botao-link" 
+                href="https://www.amazon.com.br/Hist%C3%B3ria-Internet-para-quem-pressa/dp/6588490852/ref=sr_1_1?adgrpid=1152288844555454&dib=eyJ2IjoiMSJ9.cphedOCFywQ2lRR3rwEM-j9E6Eg-DZxbBw3m8ivKflVWam0usdboOuQG3jTIiDWjIg-uJzok7gc3SrJPVVc1wEwuG90lJ9BxIkM3lYhWdACIgy5eeRAzutm-k9kNT5nKzR9YcXMX6OergOif3idK98DmTxllQRZPD1TQ5fy8ZJRegKeWKW2pEprId6yjzykajLVTBVhVg1rzlyh3IG56f2zay9p5W0GBl_nSV9oM5_BXEfhcdbaVKSWWIkwAi1DB-teSHJmNcSfZFhsC594Nub0DH31OjXGor9j1NEGPhnU.rQyXRVsr90rt70ozF9f81hZP-f-r6ogr_kkq3_KBxRo&dib_tag=se&hvadid=72018139419335&hvbmt=be&hvdev=c&hvlocphy=147001&hvnetw=o&hvqmt=e&hvtargid=kwd-72018570252160%3Aloc-20&hydadcr=5657_11235228&keywords=livro+historia+da+internet&qid=1744393819&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9" 
+                target="_blank" 
+                rel="noopener noreferrer">
+               Obtenha o seu  🛒
+
+             </a>  <!--  cometario qualquer sobre o livro ou nome do auto ou algo do tipo  !  -->      
+        </div>
+    </section>
+    
+    <section class="caixa-sobre"><!--  imagem que ficara  na tela preta do Lado  do texto pode ser a capa do livro  --> 
+        <h2 class="titulo"><span>Sobre</span> livro</h2>
+        <div class="sobre-container">
+            <div class="sobre-imagem">
+                <img src="img.livro/titulo.png">
+            </div>
+
+            <div class="sobre-texto"> <!--  texto para comentar sobre o conteudo do livro  --> 
+                <h3>Capitulo 1</h3>
+
+                <p>um breve resumo do capitulo 1 </p>
+                <p> ased anxiety among Americans about what else the Soviets could achieve. Eisenhower expressed his concern about the possibility 
+                    of future surprises and the need for the US to stay ahead in technology.
+                    In response, he suggested the creation of a new government department to coordinate high-tech efforts and ensure that American scientists were working together, avoiding internal 
+                    competition between the armed forces. This initiative was an initial 
+                    step that, although not realised at the time, would lead to the creation of the Internet, one of the most significant inventions of the 20th century. </p>
+
+                <a class="botao-link"> Saiba Mais</a> </div>
+
+
+                    <!-- começa a parte dois do livro -->
+            
+                    <section class="caixa-sobre capitulo-2">
+                        <div class="sobre-container">
+                            <div class="sobre-imagem">
+                                <img src="img.livro/imgem para capitulo 2.jpg" alt="Imagem Capítulo 2">
+                            </div>
+                            <div class="sobre-texto">
+                                <h3>Capítulo 2</h3>
+                                <p>Um breve resumo do capítulo 2.</p>
+                                <p>
+                                    Este capítulo explora os primeiros projetos de rede de computadores, como o ARPANET, e os desafios técnicos
+                                    enfrentados para conectar diferentes sistemas. Mostra como a colaboração entre universidades e agências
+                                    governamentais dos EUA impulsionou a criação de protocolos como o TCP/IP, que ainda hoje sustentam a internet moderna.
+                                    Também discute os primeiros testes de comunicação entre computadores e o surgimento das comunidades online.
+                                </p>
+                                <a class="botao-link" href="#">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </section>
+    
+    <div class="mascara-modal" onclick="esconderModal()"></div>
+   
+    <script src="./scripts.js"></script>
+    
+    
+</body>
+
+</html>
