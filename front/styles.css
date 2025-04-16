@@ -1,8 +1,8 @@
 
-:root{
-    font-size: 10px;
-    --main-color: #d3ad7f;
-    --black: #131313;
+:root{ /* dar a cor e tamanho no menu*/
+    font-size: 12px;
+    --main-color: #c09e08 ; 
+    --black: #0c0909; /* cor de fundo por tras das img */
     --bg:#010103;
    
 }
@@ -32,10 +32,10 @@
     position: fixed;
     top:0;
     
-    /*propriedade linear cria efeito esfumaçaso na tela de fundo */ 
+    /*propriedade linear cria efeito esfumaçao na tela de fundo */ 
 }
 section{
-     max-width: 1200px;
+    max-width: 1200px;
     padding: 3rem 2rem;
     margin:  0 auto;
 }
@@ -52,25 +52,30 @@ section{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 50px;
-    padding: 1.5rem 0;
+    gap: 50%;
+    padding: 1.9rem 0;
     position: relative;
 }
+/* logo */
 .header section a img{
-    height: 8rem;
-    border-radius: 99%; /* logo */
+    height: 10rem;
+    border-radius: 200%; 
 }
+
+/*menu incio,descrição do livro cor  e tamanho */
 .header section nav a{
+
     margin: 0 1rem;
-    font-size: 1.8rem;
-    color: #ecd716;
+    font-size: 1.6rem;
+    color: #f1f1ed;
     transition: 0.4s linear;
 }
 .header section nav a:hover{
+ /* header e a imagem de texto que tem home e descrição */
     color:var(--main-color);
     border-bottom: 0.1rem solid var(--main-color);
     padding-bottom: 0.5rem;
-} /* header e a imagem de o texto que tem home e endescrição */
+}
 
 
 /*caixa principal e onde tem o texto h3 "apresentação story of the internet"*/
@@ -85,7 +90,7 @@ section{
     max-width: 60rem;
 }
 .caixa-principal div h3{
-    color: #d6d31b;
+    color: #ece90a;
     font-size: 6rem;
     text-transform: uppercase;
 }
@@ -108,6 +113,7 @@ section{
     transition: 0.3s linear;
     text-shadow: none;
 }
+
 .caixa-principal div a:hover{
     letter-spacing: 0.1rem;
 /*parte finalizada sem erros do testo H3*/
@@ -130,8 +136,6 @@ section{
     background-color: var(--black);
     gap:1.5rem;
     flex-wrap: wrap;
-   
-
 }
 
 .caixa-sobre .sobre-container .sobre-imagem{
@@ -144,92 +148,117 @@ section{
     
  }
 
- .capitulo-2 .sobre-container {
-    flex-direction: row-reverse; /* Inverte a imagem e o texto */
-    background-color: #555252; /* Cor diferente para destaque */
-    border-radius: 20% 20% 7% 7%;
- }
+ /* caixa por tras da imagem cap 2 e 3*/
+ .capitulo-2 .sobre-container { /*copiar para a terceira imagem do capitulo 3*/
     
+    background-color: #888282; /* Cor diferente para destaque imag 2 */
+ }
+
 /* edição da segunda img */
-
-
 .capitulo-2 .sobre-container .sobre-imagem img {
-    width: 100%;
-    border-radius: 15% 25% 40% 7.5%;
+    width: 150%;
+    height: 100%;
 }
 
-/* edião do espaçamento do texto do capitulo 1 */
+/* edicão do espaçamento do texto do capitulo 3 */
 .caixa-sobre .sobre-container .sobre-texto{
-    flex: 1 1 45rem;
+    flex: 30rem;
     padding: 5rem;
-
-
+    display: flex;
+    /* flex-direction: row-reverse; reverte as imagem pro lado oposto */
+    background-color:#2e2c2c ;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    
 }
-/* ediçao da frase capitulo */
-.caixa-sobre .sobre-container .sobre-texto h3{
-    font-size: 3rem;
-    color: #f3eeee; 
-}
-/*ediçao de texto  capituolo 1*/
+
+/*ediçao de texto  capituolo 3*/
 .caixa-sobre .sobre-container .sobre-texto p{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: lighter;
-    color: #ece4e4;
+    color: #f0eeee;
     line-height: 1.8;
     padding: 1rem 0;    
 }
 
-
-
-/* ediçao da frase capitulo2 */
-.caixa-sobre2 .sobre-container2 .sobre-texto2 h3{
-    font-size: 3rem;
-    color: #e9e4e4; 
-}
-
-/* edião do espaçamento do texto do capitulo 2 */
+/* edição do espaçamento do texto do capitulo 2 */
 .caixa-sobre2 .sobre-container2 .sobre-texto2{ 
-    flex: 1 1 45rem;
-    padding: 5rem;
-    font-size: 1.5rem;
-
-}
-
-
-
- /*ediçao de texto  capituolo 2*/
-.caixa-sobre2 .sobre-container2 .sobre-texto2 p{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: lighter;
-    color: #dfd0d0;
+    color: #ece6e6;
     line-height: 1.8;
-    padding: 1rem 0;   
+    padding: 1rem 0;    
 }
 
-
-@media (max-width: 768px) {
-    .capitulo-2 .sobre-container {
-        flex-direction: column;
-    }
-
-    .capitulo-2 .sobre-container .sobre-texto {
-        padding: 2rem;
-    }
-
-    .capitulo-2 .sobre-container .sobre-imagem img {
-        border-radius: 10%;
-    }
-}
-  /*.modal{  /*posicionamento do mapa 
+/*alinha capitulo 3 */
+.capitulo-3 .sobre-container {
     display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    gap: 20px;
-    z-index: 4;
-    position:fixed;
-    top: 50%;
-    left: -30%;
-    transform: translate(-50%, -50%);
-    transition: left 1s linear; 
+    flex-direction: row-reverse; /* Alinhar como o capítulo 2 */
+    background-color:#7a7979 ;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+ 
+}
 
-} */
+/* img do mapa */
+.capitulo-3 .sobre-container .sobre-imagem img {
+    width: 97%;
+    
+   
+}
+
+/* perfil sobre nos */
+
+footer {
+    background-color: #131313;
+    color: #a71f1f;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+footer h2 {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+
+/* intens no fim da page com id github e likedin */
+
+.links-perfis {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.links-perfis a {
+    color: #d4a860;
+    font-size: 1.6rem;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid #d3ad7f;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.links-perfis a:hover {
+    background-color: #d3ad7f;
+    color: #000;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
