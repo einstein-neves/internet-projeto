@@ -59,22 +59,25 @@ section{
 /* logo */
 .header section a img{
     height: 10rem;
-    border-radius: 200%; 
+    width: 10rem; /* igual à altura */
+    object-fit: cover; /* para manter o preenchimento sem distorcer */
+    border-radius: 100%;
 }
 
 /*menu incio,descrição do livro cor  e tamanho */
 .header section nav a{
-
     margin: 0 1rem;
-    font-size: 1.6rem;
-    color: #f1f1ed;
-    transition: 0.4s linear;
+    font-size: 1.5rem; /* espaçamento entre as frases inicio.descrição sobre nos*/
+    color: #f7f7f3;
+    transition: 0.6s linear;
+   
+  
 }
 .header section nav a:hover{
  /* header e a imagem de texto que tem home e descrição */
     color:var(--main-color);
     border-bottom: 0.1rem solid var(--main-color);
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.6rem;
 }
 
 
@@ -213,45 +216,42 @@ section{
 /* perfil sobre nos */
 
 footer {
-    background-color: #131313;
-    color: #a71f1f;
-    padding: 4rem 2rem;
+    background-color: #4e4545; /* aba por tras dos quadros com texto*/
+    color: #f1f1ef;
+    padding: 3rem 2rem;
     text-align: center;
-    margin-top: 4rem;
+    border-radius:  60px 60px 0px 0px;
 }
 
 footer h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
     color: var(--main-color);
-    margin-bottom: 1rem;
 }
 
-
-/* intens no fim da page com id github e likedin */
-
 .links-perfis {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    display:flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-items: center;
 }
 
 .links-perfis a {
-    color: #d4a860;
     font-size: 1.6rem;
-    padding: 0.5rem 1.2rem;
-    border: 1px solid #d3ad7f;
-    border-radius: 8px;
+    color: #f5f5f2; /* texto dentro dos quadrados */
     text-decoration: none;
-    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: 0.3s ease;
+    background-color: #0f0e0e;
 }
 
 .links-perfis a:hover {
-    background-color: #d3ad7f;
-    color: #000;
-    transform: scale(1.05);
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+    color: #110d0d;
 }
-
 
 
 
