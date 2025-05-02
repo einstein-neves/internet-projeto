@@ -63,15 +63,12 @@ section{
     object-fit: cover; /* para manter o preenchimento sem distorcer */
     border-radius: 100%;
 }
-
 /*menu incio,descrição do livro cor  e tamanho */
 .header section nav a{
     margin: 0 1rem;
     font-size: 1.5rem; /* espaçamento entre as frases inicio.descrição sobre nos*/
     color: #f7f7f3;
     transition: 0.6s linear;
-   
-  
 }
 .header section nav a:hover{
  /* header e a imagem de texto que tem home e descrição */
@@ -79,10 +76,7 @@ section{
     border-bottom: 0.1rem solid var(--main-color);
     padding-bottom: 0.6rem;
 }
-
-
 /*caixa principal e onde tem o texto h3 "apresentação story of the internet"*/
-
 .caixa-principal{
     min-height: 100vh;
     display: flex;
@@ -104,6 +98,17 @@ section{
     padding: 2rem 0;
     line-height: 1.9;
 }
+
+.video-sobre {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto; /* Corrigido: centraliza o vídeo */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
 .botao-link{
     background-color: var(--main-color);
     cursor: pointer;
@@ -132,6 +137,19 @@ section{
 .titulo span{
     color: var(--main-color);
 } 
+.sobre-imagem img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.caixa-sobre {
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+}
+
+
   /* comando  que cria uma aba escura do lado da imagem da img */
 .caixa-sobre .sobre-container{
     display: flex;
@@ -139,88 +157,78 @@ section{
     background-color: var(--black);
     gap:1.5rem;
     flex-wrap: wrap;
+    flex-direction: row;
+  
 }
+ .caixa-sobre .sobre-container { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-.caixa-sobre .sobre-container .sobre-imagem{
-    flex: 1 1 45rem;
  }
 
-/* comando para primeira img */
-.caixa-sobre .sobre-container .sobre-imagem img{
+ .caixa-sobre .sobre-container .sobre-imagem {
+    flex:  1 1 40%;
+    
+ }
+/* testo das que aconpanhas as img*/
+ .caixa-sobre .sobre-container .sobre-texto{
+    flex: 2 2 60%;
+    color: #f1f1ec;
+    line-height: 1.9;
+    
+
+ }
+
+ .capitulo-3 .sobre-imagem img {
+    width: 80%;
+    border-radius: 15px;
+ }
+
+ .sobre-imagem img {
     width: 100%;
-    
- }
-
- /* caixa por tras da imagem cap 2 e 3*/
- .capitulo-2 .sobre-container { /*copiar para a terceira imagem do capitulo 3*/
-    
-    background-color: #888282; /* Cor diferente para destaque imag 2 */
- }
-
-/* edição da segunda img */
-.capitulo-2 .sobre-container .sobre-imagem img {
-    width: 150%;
-    height: 100%;
+    max-width: 400px;
+    height: 250px;         /* altura padronizada */
+    object-fit: cover;     /* centraliza e recorta para manter o layout limpo */
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
 }
 
-/* edicão do espaçamento do texto do capitulo 3 */
-.caixa-sobre .sobre-container .sobre-texto{
-    flex: 30rem;
-    padding: 5rem;
-    display: flex;
-    /* flex-direction: row-reverse; reverte as imagem pro lado oposto */
-    background-color:#2e2c2c ;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1.5rem;
-    
+/* Aplica o estilo padrão para todas as imagens, exceto as do capítulo 1 */
+.capitulo-1 .sobre-imagem img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
-/*ediçao de texto  capituolo 3*/
-.caixa-sobre .sobre-container .sobre-texto p{
-    font-size: 1.7rem;
-    font-weight: lighter;
-    color: #f0eeee;
-    line-height: 1.8;
-    padding: 1rem 0;    
-}
 
-/* edição do espaçamento do texto do capitulo 2 */
-.caixa-sobre2 .sobre-container2 .sobre-texto2{ 
-    font-size: 1.7rem;
-    font-weight: lighter;
-    color: #ece6e6;
-    line-height: 1.8;
-    padding: 1rem 0;    
-}
-
-/*alinha capitulo 3 */
-.capitulo-3 .sobre-container {
-    display: flex;
-    flex-direction: row-reverse; /* Alinhar como o capítulo 2 */
-    background-color:#7a7979 ;
-    border-radius: 10px;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1.5rem;
- 
-}
-
-/* img do mapa */
-.capitulo-3 .sobre-container .sobre-imagem img {
-    width: 97%;
-    
-   
-}
-
-/* perfil sobre nos */
 
 footer {
-    background-color: #4e4545; /* aba por tras dos quadros com texto*/
+    background-color: #444141; /* aba por tras dos quadros linck de perfil */
     color: #f1f1ef;
-    padding: 3rem 2rem;
+    margin: 0 auto;
+    padding:1rem 5rem;
     text-align: center;
-    border-radius:  60px 60px 0px 0px;
+    border-radius:  60px 60px 10px 0px;
+    max-width: 1463px
+    
+}
+
+p { /* texto */
+    font-size: 1.7rem;
+    color: #c0c029;
+    line-height: 1.9;
+    font-weight: lighter;
+}
+
+/* padrão para h2 dos títulos texto */
+h2.titulo {
+    font-size: 4rem;
+    color: #ece8e8;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 4rem;
 }
 
 footer h2 {
@@ -254,7 +262,18 @@ footer h2 {
 }
 
 
-
+.foguete-horizontal {
+    position: relative;
+    display: inline-block;
+    animation: fogueteAndando 4s linear infinite;
+    font-size: 3rem;
+  }
+  
+  @keyframes fogueteAndando {
+    0% { left: -50px; }
+    100% { left: 100vw; }
+  }
+  
 
 
 
