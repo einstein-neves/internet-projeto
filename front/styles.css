@@ -100,13 +100,22 @@ section{
 }
 
 .video-sobre {
-    max-width: 600px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto; /* Corrigido: centraliza o vídeo */
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
 }
+
+.video-sobre video {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20%;
+    box-shadow: 0 0 20px rgba(241, 237, 237, 0.9);
+}
+
 
 
 .botao-link{
@@ -124,7 +133,7 @@ section{
 
 .caixa-principal div a:hover{
     letter-spacing: 0.1rem;
-/*parte finalizada sem erros do testo H3*/
+
 }
 
 .titulo {
@@ -137,17 +146,34 @@ section{
 .titulo span{
     color: var(--main-color);
 } 
-.sobre-imagem img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+.sobre-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 2rem;
     border-radius: 15px;
-    object-fit: cover;
 }
-.caixa-sobre {
-    padding: 3rem 2rem;
-    margin-bottom: 2rem;
+
+.sobre-imagem {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
 }
+/*fomra tamanhos largura e altura das img*/
+.sobre-imagem img {
+    width: 120%;
+    max-width: 450px; /* tamanho fixo máximo */
+    height: 300px;     /* altura fixa */
+    object-fit: cover; /* para manter proporção sem distorcer */
+    border-radius: 20%;
+    box-shadow: 0 0 20px rgba(241, 237, 237, 0.9); /*sobreamento na borda da img*/
+}
+
 
 
   /* comando  que cria uma aba escura do lado da imagem da img */
@@ -175,23 +201,23 @@ section{
  .caixa-sobre .sobre-container .sobre-texto{
     flex: 2 2 60%;
     color: #f1f1ec;
-    line-height: 1.9;
+    line-height: 1.7;
     
 
  }
 
  .capitulo-3 .sobre-imagem img {
     width: 80%;
-    border-radius: 15px;
+    border-radius: 40px;
  }
 
  .sobre-imagem img {
     width: 100%;
-    max-width: 400px;
-    height: 250px;         /* altura padronizada */
+    max-width: 700px;
+    height: 350px;         /* altura padronizada */
     object-fit: cover;     /* centraliza e recorta para manter o layout limpo */
     border-radius: 15px;
-    display: block;
+    display: flex;
     margin: 0 auto;
 }
 
@@ -217,7 +243,7 @@ footer {
 
 p { /* texto */
     font-size: 1.7rem;
-    color: #c0c029;
+    color: #f5f5f1;
     line-height: 1.9;
     font-weight: lighter;
 }
